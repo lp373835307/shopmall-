@@ -1,0 +1,22 @@
+server:
+  port: 8086
+
+spring:
+  dubbo:
+    application:
+      name: consumer
+    base-package: com.lp.service
+    registry:
+      address: 139.196.56.81
+      port: 2181
+      protocol: zookeeper
+    protocol:
+      name: dubbo
+  redis:
+    host: 139.196.56.81
+    port: 6379
+
+  mvc:
+    view:
+      prefix: /WEB-INF/page/
+      suffix: .jsp
